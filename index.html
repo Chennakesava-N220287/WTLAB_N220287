@@ -1,5 +1,193 @@
+<html>
+<head>
+    <title>Chalo India</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            height: 80vh;
+            background-image:url( "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqvg1eM5VUycZTI4IACno06qTCfcMw0mHzsw&s");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .ride-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .ride-form input {
+            width: 280px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .ride-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .services {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .services h2 {
+            margin-bottom: 30px;
+        }
+
+        .service-box {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #f5f5f5;
+            padding: 25px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+        .sign {
+            top:10px;
+            right:10px;
+            background-color: red;
+            width: 75px;
+            height:50px;
+            border-radius: 5px 0 0 5px;
+            font-style: italic;
+            font-size:medium;
+        }
+
+        
+    </style>
+</head>
 <body>
-    <h2>
-        hi
-    </h2>
+    <header class="navbar">
+        <h2 class="logo"><i>Chalo India</i></h2>
+        <nav>
+            <a href="#About Us">About Us</a>
+            <a href="#Rapido Ads">Ads</a>
+            <a href="#Safety">Safety</a>
+            <a href="#Blog">Blog</a>
+            <a href="#Contact Us">Contact Us</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">  
+        </div>
+        <button class="sign">Sign in</button>
+
+    </header>
+    <section class="hero">
+        <div>
+            <h1>Bharat Moves On!</h1>
+            <p>Quick, affordable and safe rides at your fingertips.</p>
+            <div class="ride-form">
+                <input type="text" id="pickup" placeholder="Enter pickup location"><br>
+                <input type="text" id="drop" placeholder="Enter drop location"><br>
+                <button>Book a Ride</button>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <div class="card">
+                <h3>Bike Taxi</h3>
+                <p>Fast rides through traffic.</p>
+            </div>
+            <div class="card">
+                <h3>Auto</h3>
+                <p>Affordable city travel.</p>
+            </div>
+            <div class="card">
+                <h3>Parcel</h3>
+                <p>Quick delivery services.</p>
+            </div>
+        </div>
+    </section>
+    <div id="Safety" style="padding: 50px; text-align: center;">
+        <h3><i>Safety</i></h3>
+        <pre> present in our country,there are so many accidents are happening we ensure customers safety is our first priority...! so we use helmets for both captains and customers.. our vehicles are all under pollution check </pre>
+    </div>
+    </div>
+    <div id="Ads" style="padding: 50px; text-align: center;">
+        <h3><i>Ads</i></h3>
+        <p>Advertise with us to reach millions of users across India. Our platform offers a range of ad formats, including banner ads, interstitial ads, and sponsored content.</p>
+    </div>
+    <div id="Blog" style="padding: 50px; text-align: center;">
+        <h3><i>Blog</i></h3>
+        <p>Stay up-to-date with the latest news and updates from Chalo India. Our blog features articles on transportation, safety, and technology.</p>
+    </div>
+    <footer>
+        <h4><i>All copyrights are overwritten</i></h4>
+    </footer>
 </body>
+</html>
