@@ -31,9 +31,10 @@
 
         .hero {
             height: 80vh;
+            /*
             background-image:url( "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqvg1eM5VUycZTI4IACno06qTCfcMw0mHzsw&s");
             background-size: cover;
-            background-position: center;
+            background-position: center;*/
             display: flex;
             justify-content: center;
             align-items: center;
@@ -130,12 +131,25 @@
             width:700px;
             height:200px;
         }
+        .bg-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: -1;
+        }
         
 
         
     </style>
 </head>
 <body>
+     <video class="bg-video" autoplay muted loop playsinline>
+        <source src="/backgroundVideo/Galaxy Free Background Video_ Motion Graphics_ No Copyright Background _ All Background Video(360P).mp4">
+     </video>
     <header class="navbar">
         <h2 class="logo"><i>Chalo India</i></h2>
         <nav>
@@ -199,7 +213,7 @@
     </audio>
 
     <video controls muted width="400" height="200">
-        <source src="video/How to Build a Portfolio Website for Data Science(1080P_HD).mp4">
+        <source src="/video/_pspk _pawankalyan .mp4">
     </video><br>
     
     <iframe 
