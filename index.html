@@ -130,6 +130,36 @@
             width:700px;
             height:200px;
         }
+        table{
+            box-shadow: 2px 2px 20px black;
+            border-collapse: collapse;
+            border-radius: 10px;
+            border:1px solid;
+            table-layout: auto;
+            width: 500px;
+        }
+        th,td{
+            padding:8px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+        }
+        tr:nth-child(even){
+            background-color: #e49a9a;
+        }
+        tr:hover{
+            background-color: rgb(85, 57, 47);
+        }
+        tr:first-child{
+            background-color: aqua;
+        }
+        .tab{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
         
         
 
@@ -164,6 +194,29 @@
             </div>
         </div>
     </section>
+    
+    <section class="tab">
+        <table>
+            <tr><th>vehicle</th>
+            <th>fare</th></tr>
+            <tr>
+                <td>car</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>bike</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>auto</td>
+                <td>80</td>
+            </tr>
+            
+        </table>
+    </section>
+
+
+
     <section class="services">
         <h2>Our Services</h2>
         <div class="service-box">
