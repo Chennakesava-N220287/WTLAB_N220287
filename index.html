@@ -115,22 +115,12 @@
             border: none;
             border-radius: 5px 0 0 5px;
         }
-        .sign {
-            top:10px;
-            right:10px;
-            background-color: red;
-            width: 75px;
-            height:50px;
-            border-radius: 5px 0 0 5px;
-            font-style: italic;
-            font-size:medium;
-        }
         iframe{
             display:block;
             width:700px;
             height:200px;
         }
-        table{
+        .table{
             box-shadow: 2px 2px 20px black;
             border-collapse: collapse;
             border-radius: 10px;
@@ -160,6 +150,21 @@
             align-items: center;
             text-align: center;
         }
+
+        .sign {
+            background: #1e88e5;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .sign:hover {
+            background: #1565c0;
+        }
+
         
         
 
@@ -180,7 +185,9 @@
         <div class="search-bar">
             <input type="text" placeholder="Search...">  
         </div>
-        <button class="sign">Sign in</button>
+
+        <a href="forms.html" class="sign">Sign In</a>
+
 
     </header>
     <section class="hero">
@@ -196,7 +203,7 @@
     </section>
     
     <section class="tab">
-        <table>
+        <table class="table">
             <tr><th>vehicle</th>
             <th>fare</th></tr>
             <tr>
@@ -210,6 +217,31 @@
             <tr>
                 <td>auto</td>
                 <td>80</td>
+            </tr>
+            
+        </table>
+    </section>
+    <br>
+    <br>
+
+     <section style="display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;" >
+        <table style="border-radius: 10px;width: 500px;">
+            <tr><th style="background-color: crimson;">vehicle</th>
+            <th style="background-color: crimson;">company</th></tr>
+            <tr >
+                <td style="text-align: left; background-color: #ccc;">car</td>
+                <td style="text-align: left; background-color: #ccc;">swift</td>
+            </tr>
+            <tr >
+                <td style="text-align: left; background-color: #f5f5f5">bike</td>
+                <td style="text-align: left; background-color: #f5f5f5;">honda</td>
+            </tr>
+            <tr>
+                <td style="text-align: left; background-color: #ccc;">auto</td>
+                <td style="text-align: left; background-color: #ccc;">mahindra</td>
             </tr>
             
         </table>
