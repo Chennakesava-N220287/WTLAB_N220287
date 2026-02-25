@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+
+<form action="register.php" method="POST" class="signup-form">
+
+    <h2>Create Account</h2>
+
+    <input type="text" name="fullname" placeholder="Full Name">
+    <input type="email" name="email" placeholder="Email">
+    <input type="number" name="phone" placeholder="Phone Number">
+    <input type="password" name="password" placeholder="Password">
+    <input type="date" name="created_at">
+
+
+    <div class="gender">
+    <label><input type="radio" name="gender" value="Male"> Male</label>
+    <label><input type="radio" name="gender" value="Female"> Female</label>
+    </div>
+
+    
+    <button type="submit">submit</button>
+
+</form>
+<a href="google_auth.php">sign in with google</a>
+</body>
+</html>
