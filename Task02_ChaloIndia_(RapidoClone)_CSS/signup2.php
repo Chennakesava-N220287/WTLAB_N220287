@@ -1,9 +1,6 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errorrs',1);
-
 session_start();
-require 'config/db2.php';
+require __DIR__ . '/config/db2.php';
 
 $email = $_POST['email'] ?? '';
 $password = $_POST['password'] ?? '';
